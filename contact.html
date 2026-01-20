@@ -117,7 +117,22 @@ footer {
   <a href="ads.html">Мои каналы</a>
   <a href="quotes.html">Цитаты</a>
 </nav>
+<style>
+nav a {
+  display: inline-block;
+  margin: 5px 10px; /* меньше отступы на мобильном */
+  padding: 12px 20px; /* чуть меньше, чтобы влезало */
+  font-size: 16px;    /* норм для телефона */
+}
 
+@media (max-width: 600px) {
+  nav a {
+    display: block;  /* кнопки будут друг под другом */
+    margin: 10px auto;
+    width: 80%;      /* занимают почти всю ширину */
+  }
+}
+</style>
 <section>
   <div class="contact-card">
     <i class="fab fa-telegram"></i>

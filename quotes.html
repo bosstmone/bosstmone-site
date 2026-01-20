@@ -39,7 +39,22 @@ footer { text-align:center; margin-top:50px; padding:20px; border-top:2px solid 
   <a href="ads.html">Мои каналы</a>
   <a href="contact.html">Связь</a>
 </nav>
+<style>
+nav a {
+  display: inline-block;
+  margin: 5px 10px; /* меньше отступы на мобильном */
+  padding: 12px 20px; /* чуть меньше, чтобы влезало */
+  font-size: 16px;    /* норм для телефона */
+}
 
+@media (max-width: 600px) {
+  nav a {
+    display: block;  /* кнопки будут друг под другом */
+    margin: 10px auto;
+    width: 80%;      /* занимают почти всю ширину */
+  }
+}
+</style>
 <h1 style="color:gold; margin-bottom:40px;">Мои цитаты</h1>
 
 <div id="quotes-container">

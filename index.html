@@ -77,6 +77,22 @@ footer { text-align:center; margin-top:60px; padding:20px; border-top:1px solid 
   box-shadow: 0 10px 25px rgba(212,175,55,0.6);
   color:#000;
 }
+
+nav a {
+  display: inline-block;
+  margin: 5px 10px; /* меньше отступы на мобильном */
+  padding: 12px 20px; /* чуть меньше, чтобы влезало */
+  font-size: 16px;    /* норм для телефона */
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;  /* кнопки будут друг под другом */
+    margin: 10px auto;
+    width: 80%;      /* занимают почти всю ширину */
+  }
+}
+
 </style>
 
 
