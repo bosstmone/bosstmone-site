@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bosstmone - Связь</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body { 
+  margin:0; 
+  font-family:'Roboto', sans-serif; 
+  background:#0b0b0b; 
+  color:#f0f0f0; 
+}
+
+.container { 
+  max-width:900px; 
+  margin:auto; 
+  padding:50px 20px; 
+  text-align:center; 
+}
+
+/* NAVIGATION */
+nav { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+nav a { 
+  display:inline-block; 
+  margin:0 15px; 
+  padding:12px 25px; 
+  background:gold; 
+  color:#0b0b0b; 
+  border-radius:25px; 
+  font-weight:bold; 
+  text-decoration:none; 
+  transition:0.4s; 
+  box-shadow:0 5px 15px rgba(212,175,55,0.4); 
+}
+nav a:hover { 
+  background:#e6c200; 
+  transform:translateY(-5px) scale(1.05); 
+}
+
+/* CONTACT SECTION */
+section { 
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+  gap:30px; 
+}
+
+/* CONTACT CARD */
+.contact-card {
+  background:#141414;
+  padding:40px;
+  border-radius:25px;
+  border:2px solid rgba(212,175,55,0.3);
+  width:300px;
+  transition:0.4s;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.6);
+}
+.contact-card:hover { 
+  transform:translateY(-10px) scale(1.05); 
+  border-color:gold; 
+  box-shadow:0 15px 35px rgba(212,175,55,0.5);
+}
+.contact-card i { 
+  font-size:3em; 
+  color:gold; 
+  margin-bottom:20px; 
+}
+.contact-card h2 { 
+  color:gold; 
+  margin-bottom:20px; 
+}
+.contact-card p { 
+  font-size:1.05em; 
+  line-height:1.5; 
+  margin-bottom:30px; 
+}
+.contact-card a { 
+  display:inline-block; 
+  padding:12px 25px; 
+  background:gold; 
+  color:#0b0b0b; 
+  border-radius:25px; 
+  font-weight:bold; 
+  text-decoration:none; 
+  transition:0.3s; 
+}
+.contact-card a:hover { 
+  background:#e6c200; 
+  transform:scale(1.05);
+}
+
+/* FOOTER */
+footer { 
+  text-align:center; 
+  margin-top:50px; 
+  padding:20px; 
+  border-top:2px solid gold; 
+  color:gold; 
+  font-weight:bold; 
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+  <a href="index.html">Главная</a>
+  <a href="about.html">Обо мне</a>
+  <a href="ads.html">Мои каналы</a>
+  <a href="quotes.html">Цитаты</a>
+</nav>
+
+<section>
+  <div class="contact-card">
+    <i class="fab fa-telegram"></i>
+    <h2>Telegram-бот</h2>
+    <p>Привет! Если хочешь узнать обо мне больше, поддержать проект или просто пообщаться, используй моего Telegram-бота. Он мгновенно ответит и даст полную информацию обо мне и моих каналах!</p>
+    <a href="https://t.me/bosstmonebot" target="_blank">Перейти в Telegram Bot</a>
+  </div>
+
+  <div class="contact-card">
+    <i class="fab fa-telegram"></i>
+    <h2>Свяжись со мной напрямую</h2>
+    <p>Если по какой-то причине бот не отвечает, напиши мне напрямую. Мир тебе и благословение Аллаха!</p>
+    <a href="https://t.me/hughafner" target="_blank">Написать в Telegram</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Bosstmone. Все права защищены.
+</footer>
+
+</div>
+
+</body>
+</html>

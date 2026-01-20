@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bosstmone - Главная</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body { margin:0; font-family:'Roboto', sans-serif; background:#0b0b0b; color:#f0f0f0; scroll-behavior:smooth; }
+.container { padding:50px 20px; text-align:center; }
+
+/* HEADER */
+header img { width:200px; height:200px; border-radius:50%; border:3px solid gold; margin-bottom:20px; }
+header h1 { font-size:3em; color:gold; margin-bottom:10px; }
+header p { opacity:0.8; margin-bottom:30px; }
+
+/* NAVIGATION */
+nav a { display:inline-block; margin:15px 20px; font-size:1.2em; color:gold; text-decoration:none; transition:0.3s; }
+nav a:hover { color:#fff; }
+
+/* CHANNELS BLOCK */
+.channels { display:flex; justify-content:center; flex-wrap:wrap; gap:25px; margin-top:50px; }
+.channel-card { background:#141414; padding:25px; border-radius:15px; border:1px solid rgba(212,175,55,0.2); width:200px; transition:0.3s; }
+.channel-card:hover { transform:translateY(-5px); border-color:gold; }
+.channel-card i { font-size:2.5em; color:gold; margin-bottom:10px; }
+.channel-card h3 { color:gold; margin-bottom:10px; }
+.channel-card p { font-size:0.9em; opacity:0.8; margin-bottom:10px; }
+.channel-card a { display:inline-block; padding:8px 20px; background:gold; color:#000; border-radius:25px; font-weight:bold; transition:0.3s; text-decoration:none; }
+.channel-card a:hover { background:#e6c200; }
+
+/* FOOTER */
+footer { text-align:center; margin-top:60px; padding:20px; border-top:1px solid #333; opacity:0.6; font-size:14px; }
+
+/* ANIMATION */
+.reveal { opacity:0; transform:translateY(40px); transition:0.8s; }
+.reveal.show { opacity:1; transform:translateY(0); }
+</style>
+</head>
+<body>
+
+<div class="container">
+<header class="reveal">
+  <img src="uuu.jpg" alt="Bosstmone">
+  <h1>Bosstmone</h1>
+  <p>Faith • Discipline • Growth</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav class="reveal">
+  <a href="about.html" class="nav-btn">Обо мне</a>
+  <a href="ads.html" class="nav-btn">Мои каналы</a>
+  <a href="quotes.html" class="nav-btn">Цитаты</a>
+  <a href="contact.html" class="nav-btn">Связь</a>
+</nav>
+
+<style>
+/* Навигационные кнопки */
+.nav-btn {
+  display:inline-block;
+  margin:15px 20px;
+  font-size:1.2em;
+  color:#0b0b0b;
+  background:gold;
+  padding:12px 25px;
+  border-radius:25px;
+  font-weight:bold;
+  text-decoration:none;
+  transition:0.4s;
+  box-shadow: 0 5px 15px rgba(212,175,55,0.4);
+}
+
+.nav-btn:hover {
+  background:#e6c200;
+  transform:translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(212,175,55,0.6);
+  color:#000;
+}
+</style>
+
+
+<!-- CHANNELS BLOCK -->
+<section class="channels reveal">
+  <div class="channel-card">
+    <i class="fab fa-youtube"></i>
+    <h3>YouTube</h3>
+    <p>Подписывайся и смотри полезный контент каждый день!</p>
+    <a href="https://youtube.com/@bosstmone" target="_blank">Перейти</a>
+  </div>
+  <div class="channel-card">
+    <i class="fab fa-telegram"></i>
+    <h3>Telegram</h3>
+    <p>Мой канал с мотивацией и полезными советами.</p>
+    <a href="https://t.me/Bosstmone" target="_blank">Перейти</a>
+  </div>
+  <div class="channel-card">
+    <i class="fab fa-vk"></i>
+    <h3>VK</h3>
+    <p>Будь в курсе всех обновлений и новостей!</p>
+    <a href="https://vk.com/Bosstmone" target="_blank">Перейти</a>
+  </div>
+</section>
+
+<footer class="reveal">
+  &copy; 2026 Bosstmone. Все права защищены.
+</footer>
+</div>
+<style>
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 2px solid gold; /* золотая линия сверху */
+  background: #0b0b0b;       /* немного темнее для контраста */
+  color: gold;                /* золотой текст */
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+</style>
+
+<script>
+// Анимация при скролле
+const reveals = document.querySelectorAll(".reveal");
+window.addEventListener("scroll", () => {
+  reveals.forEach(el => {
+    const top = el.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) el.classList.add("show");
+  });
+});
+</script>
+
+
+</body>
+</html>
